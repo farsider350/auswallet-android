@@ -121,11 +121,11 @@ public class BitcoinUrlHandler {
 
         String tmp = str.trim().replaceAll("\n", "").replaceAll(" ", "%20");
 
-        if (!tmp.startsWith("australiacash://")) {
-            if (!tmp.startsWith("australiacash:"))
-                tmp = "australiacash://".concat(tmp);
+        if (!tmp.startsWith("dingocoin://")) {
+            if (!tmp.startsWith("dingocoin:"))
+                tmp = "dingocoin://".concat(tmp);
             else
-                tmp = tmp.replace("australiacash:", "australiacash://");
+                tmp = tmp.replace("dingocoin:", "dingocoin://");
         }
         URI uri;
         try {

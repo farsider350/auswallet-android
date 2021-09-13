@@ -127,7 +127,7 @@ public class APIClient {
     private Context ctx;
 
     public enum FeatureFlags {
-        BUY_BITCOIN("buy-auscash"),
+        BUY_BITCOIN("buy-dingocoin"),
         EARLY_ACCESS("early-access");
 
         private final String text;

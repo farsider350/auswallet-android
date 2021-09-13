@@ -56,7 +56,7 @@ public class BRCurrency {
         String symbol = null;
         decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
 //        int decimalPoints = 0;
-        if (Objects.equals(isoCurrencyCode, "AUS")) {
+        if (Objects.equals(isoCurrencyCode, "DINGO")) {
             symbol = BRExchange.getBitcoinSymbol(app);
         } else {
             try {
@@ -79,7 +79,7 @@ public class BRCurrency {
 
     public static String getSymbolByIso(Context app, String iso) {
         String symbol;
-        if (Objects.equals(iso, "AUS")) {
+        if (Objects.equals(iso, "DINGO")) {
             String currencySymbolString = BRConstants.bitcoinLowercase;
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
@@ -110,7 +110,7 @@ public class BRCurrency {
 
     //for now only use for BTC and Bits
     public static String getCurrencyName(Context app, String iso) {
-        if (Objects.equals(iso, "AUS")) {
+        if (Objects.equals(iso, "DINGO")) {
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
@@ -119,7 +119,7 @@ public class BRCurrency {
                     case BRConstants.CURRENT_UNIT_LITES:
                         return "aces";
                     case BRConstants.CURRENT_UNIT_LITECOINS:
-                        return "AUS";
+                        return "DINGO";
                 }
             }
         }
@@ -129,7 +129,7 @@ public class BRCurrency {
     public static int getMaxDecimalPlaces(String iso) {
         if (Utils.isNullOrEmpty(iso)) return 8;
 
-        if (iso.equalsIgnoreCase("AUS")) {
+        if (iso.equalsIgnoreCase("DINGO")) {
             return 8;
         } else {
             Currency currency = Currency.getInstance(iso);

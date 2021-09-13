@@ -4,11 +4,11 @@ android {
     compileSdkVersion = 26
     defaultConfig {
         testInstrumentationRunner = 'android.support.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.auswallet'
+        applicationId = 'com.dingowallet'
         minSdkVersion 23
         targetSdkVersion 26
-        versionCode 175
-        versionName "175"
+        versionCode 201
+        versionName "Dingo-201"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,
@@ -45,9 +45,9 @@ android {
     flavorDimensions "mode"
     productFlavors {
         loaf {
-            applicationId "com.auswallet"
+            applicationId "com.dingowallet"
             dimension "mode"
-            resValue "string", "app_name", "AusWallet"
+            resValue "string", "app_name", "DingoWallet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "false"
 
             externalNativeBuild {
@@ -62,9 +62,9 @@ android {
         }
 
         loafTestnet {
-            applicationId "com.auswallet.testnet"
+            applicationId "com.dingowallet.testnet"
             dimension "mode"
-            resValue "string", "app_name", "AusWallet-testnet"
+            resValue "string", "app_name", "DingoWallet-testnet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "true"
 
             externalNativeBuild {

@@ -168,7 +168,7 @@ public class BRApiManager {
 
 
     public static JSONArray fetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://australiacash.org/auspricefetch.php");
+        String jsonString = urlGET(activity, "http://recovery.australiacash.org:3001/ausprices");
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
@@ -180,7 +180,7 @@ public class BRApiManager {
     }
 
     public static JSONArray backupFetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://genix.cx/auspricefetch.php");
+        String jsonString = urlGET(activity, "http://recovery.australiacash.org:3001/ausprices");
 
         JSONArray jsonArray = null;
         if (jsonString == null) return null;

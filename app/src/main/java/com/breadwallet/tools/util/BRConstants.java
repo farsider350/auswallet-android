@@ -131,9 +131,9 @@ public class BRConstants {
     public static final String fingerprintSpendingLimit = "fingerprint-spending-limit";
     public static final String transactionDetails = "transaction-details";
 //    public static final String manageWallet = "manage-wallet";
-    public static final String receive = "receive-australiacash";
+    public static final String receive = "receive-dingocoin";
     public static final String requestAmount = "request-amount";
-    public static final String send = "send-australiacash";
+    public static final String send = "send-dingocoin";
     public static final String walletDisabled = "wallet-disabled";
     public static final String resetPinWithPaperKey = "reset-pin-paper-key";
     public static final String setPin = "set-pin";
@@ -144,12 +144,12 @@ public class BRConstants {
     public static final String wipeWallet = "wipe-wallet";
     public static final String loopBug = "android-loop-bug";
 
-    public static final String TWITTER_LINK = "https://twitter.com/australia_cash";
-    public static final String REDDIT_LINK = "https://www.reddit.com/r/australiacash";
-    public static final String WEB_LINK = "https://australiacash.org";
-    public static final String TOS_LINK = "https://australiacash.org/privacypolicy.html";
+    public static final String TWITTER_LINK = "https://twitter.com/dingocoin";
+    public static final String REDDIT_LINK = "https://www.reddit.com/r/dingocoin";
+    public static final String WEB_LINK = "https://dingocoin.org";
+    public static final String TOS_LINK = "https://dingocoin.org/privacypolicy.html";
 
-    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "http://auscashexplorer.org/tx/" : "http://auscashexplorer.org/tx/";
+    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "https://openchains.info/coin/dingocoin/tx/" : "https://openchains.info/coin/dingocoin/tx/";
 
     private BRConstants() {
     }

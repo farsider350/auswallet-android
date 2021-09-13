@@ -67,7 +67,7 @@
   <!-- API Token error message -->
   <string name="ApiClient.tokenError">API-Token konnte nicht abgerufen werden</string>
   <!-- Send BCH view body. -->
-  <string name="BCH.body">Geben Sie unten eine Ziel-BCH-Adresse ein. Das gesamte BCH Guthaben aus Ihrem Wallet zur Zeit der Aufspaltung (%1$s) wird versendet.</string>
+  <string name="BCH.body">Geben Sie unten eine Ziel-BCH-Adresse ein. Das gesamte BCH Guthaben dingo Ihrem Wallet zur Zeit der Aufspaltung (%1$s) wird versendet.</string>
   <!-- Confirm sending <$5.00> to <address>? -->
   <string name="BCH.confirmationMessage">Senden von %1$s an %2$s bestätigen</string>
   <!-- Confirmation alert title -->

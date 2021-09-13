@@ -50,11 +50,11 @@
 #if BITCOIN_TESTNET
 
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-        {       0, "32fbb5ecde32b9506eec7e75efd9d390f7e9d3dc06aa7a9a430f0a131307be7e", 1541015250, 0x1e0ffff0 }
+        {       26, "3fce514fc35d0ed13a5cb40c971b0ad8d35e11180f409ac34517f555701032b1", 1541015250, 0x1e0ffff0 }
 };
 
 static const char *dns_seeds[] = {
-        "australiacash.org."
+        "seed1.dingocoin.org."
 };
 
 #else // main net
@@ -62,16 +62,16 @@ static const char *dns_seeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they need to be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    {       0, "aa43989047f144331fc6400859c691b11c0e111ead1977511d340860c1c5ad1f", 1542015250, 0x1e0ffff0 },
-    {   20160, "4ccd30ff5c2c487ae6506a8af78cbd1e7a20b76092702c1e76081fbe976583b7", 1545456404, 0x1e0c5cf8 },
-    {   40320, "1abac144d1f543c959c7760708b4c9c26cc205692321f88becd55769c46cd7c9", 1548505218, 0x1c01363e },
-    {   60480, "e0eaeabddff21b76ea7e52e7bd251128a04fb9483201b7c77c43778dc8358cb2", 1551874795, 0x1c01d085 },
-    {   80640, "6f916493f43cea8e4f68cdbe099439d4c457abbb0aee54f2218da762c71378e7", 1554938600, 0x1c019c98 },
-    {  100800, "1792fff6006b926d1408c5a2110a50d18ef3a811969ff8f5179766f1d9524be5", 1558575181, 0x1c011a50 }
+    {       0, "1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691", 1386325540, 0x1e0ffff0 }, // Doge Genesis
+    {   55055, "2fa24fb0bf92fec6423c14e47069fd3ac499a364e0ab980a1c59488a4f0a3aa8", 1621071087, 0x1c015731 },
+    {  120555, "6215aac1c26c63dd9d03a75ae51d6dd0095adea867ade83dc3eaa341b0ee15cd", 1625255939, 0x1c01239b },
+    {  183555, "113a08a1de79dcb3d6b0173dd56198f7020b2c596960670166cf9c5d76d3ddb4", 1629298273, 0x1b64a6e7 },
+    {  210555, "ad7250e207ccb65f95761d5510a310dca47bcc0d76cb3cb9a62c4a9860e332a2", 1631021347, 0x1b4a98b5 },
+    {  218193, "7905ddb55abef66a60484f2b9405d397900770718b781a746b4e4a146e352c96", 1631508785, 0x1b53d0de }
 };
 
 static const char *dns_seeds[] = {
-    "australiacash.org."
+    "seed1.dingocoin.org."
 };
 #endif
 

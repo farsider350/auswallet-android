@@ -144,7 +144,7 @@ public class BRSharedPrefs {
 
     public static String getWalletName(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(BRConstants.PREFS_NAME, Context.MODE_PRIVATE);
-        return prefs.getString(BRConstants.WALLET_NAME, "My Aus");
+        return prefs.getString(BRConstants.WALLET_NAME, "My Dingo");
     }
 
     public static void putWalletName(Context ctx, String name) {

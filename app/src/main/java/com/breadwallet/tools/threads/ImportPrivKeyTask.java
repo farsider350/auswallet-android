@@ -59,7 +59,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
     public ImportPrivKeyTask(Activity activity) {
         app = activity;
-        UNSPENT_URL = BuildConfig.BITCOIN_TESTNET ? "http://auscashexplorer.org/ext/getaddress/" : "http://auscashexplorer.org/ext/getaddress/";
+        UNSPENT_URL = BuildConfig.BITCOIN_TESTNET ? "http://dingocoinexplorer.org/ext/getaddress/" : "http://dingocoinexplorer.org/ext/getaddress/";
     }
 
     @Override
@@ -95,10 +95,10 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
 //        String iso = BRSharedPrefs.getIso(app);
 
-        String sentBits = BRCurrency.getFormattedCurrencyString(app, "AUS", BRExchange.getAmountFromSatoshis(app, "AUS", new BigDecimal(importPrivKeyEntity.getAmount())));
+        String sentBits = BRCurrency.getFormattedCurrencyString(app, "DINGO", BRExchange.getAmountFromSatoshis(app, "DINGO", new BigDecimal(importPrivKeyEntity.getAmount())));
 //        String sentExchange = BRCurrency.getFormattedCurrencyString(app, iso, BRExchange.getAmountFromSatoshis(app, iso, new BigDecimal(importPrivKeyEntity.getAmount())));
 
-        String feeBits = BRCurrency.getFormattedCurrencyString(app, "AUS", BRExchange.getAmountFromSatoshis(app, "AUS", new BigDecimal(importPrivKeyEntity.getFee())));
+        String feeBits = BRCurrency.getFormattedCurrencyString(app, "DINGO", BRExchange.getAmountFromSatoshis(app, "DINGO", new BigDecimal(importPrivKeyEntity.getFee())));
 //        String feeExchange = BRCurrency.getFormattedCurrencyString(app, iso, BRExchange.getAmountFromSatoshis(app, iso, new BigDecimal(importPrivKeyEntity.getFee())));
 
         if (app == null || importPrivKeyEntity == null) return;

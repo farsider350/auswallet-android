@@ -41,8 +41,8 @@ public class BRExchange {
     private static final String TAG = BRExchange.class.getName();
 
     public static BigDecimal getMaxAmount(Context context, String iso) {
-        final long MAX_BTC = 84000000;
-        if (iso.equalsIgnoreCase("AUS"))
+        final long MAX_BTC = 200000000000;
+        if (iso.equalsIgnoreCase("DINGO"))
             return getBitcoinForSatoshis(context, new BigDecimal(MAX_BTC * 100000000));
         CurrencyEntity ent = CurrencyDataSource.getInstance(context).getCurrencyByIso(iso);
         if (ent == null) return new BigDecimal(Integer.MAX_VALUE);
@@ -110,7 +110,7 @@ public class BRExchange {
     public static BigDecimal getAmountFromSatoshis(Context app, String iso, BigDecimal amount) {
 //        Log.e(TAG, "getAmountFromSatoshis: " + iso + ":" + amount);
         BigDecimal result;
-        if (iso.equalsIgnoreCase("AUS")) {
+        if (iso.equalsIgnoreCase("DINGO")) {
             result = getBitcoinForSatoshis(app, amount);
         } else {
             //multiply by 100 because core function localAmount accepts the smallest amount e.g. cents
@@ -129,7 +129,7 @@ public class BRExchange {
     public static BigDecimal getSatoshisFromAmount(Context app, String iso, BigDecimal amount) {
 //        Log.e(TAG, "getSatoshisFromAmount: " + iso + ":" + amount);
         BigDecimal result;
-        if (iso.equalsIgnoreCase("AUS")) {
+        if (iso.equalsIgnoreCase("DINGO")) {
             result = BRExchange.getSatoshisForBitcoin(app, amount);
         } else {
             //multiply by 100 because core function localAmount accepts the smallest amount e.g. cents
